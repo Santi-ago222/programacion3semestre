@@ -50,3 +50,8 @@ if(numeroingresado==nuemerooculto and vidas>= 0):
 else:
     print(MENSAJE_PERDISTE)
     print("ESPERO QUE TE HAYA GUSTADO EL JUEGO, ADIOS")
+
+
+
+
+
