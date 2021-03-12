@@ -15,6 +15,10 @@ MensajeListaoriginal= 'mostrando lista original, scs no es necesaria la conversi
 MensajeEuros= 'la conversion de dolares a euros es la siguiente : '
 MensajeError= 'lo sentimos , ese valor no es valido'
 Mensajeopcion= 'la opcion que usted escogio fue :'
+Mensajeingresoalto= ' el ingreso mas alto fue : '
+Mensajeingresobajo= 'el ingreso mas bajo fue : '
+Mensajepromedioo= 'el promedio de los ingresos fue : '
+Mensajeerrordenumero= 'el numero que ingresaste no se encuentra dentro de las opciones'
 
 
 ListaClasificacion= []
@@ -45,11 +49,20 @@ for elemento in ListaDolares:
         Clasificacion= 'usted tiene ingresos mesuales elevados'
         ListaClasificacion.append(Clasificacion)
 
+#--suma y cantidad de elementos para promedio--#
+sumalistadolares= sum (ListaDolares)
+largolistadolares= len (ListaDolares)
+
+#---mas bajo, alto, promedio--#
+Mayorelemento= max(ListaDolares)
+Menorelemento= min(ListaDolares)
+promedioelementos= sumalistadolares/ largolistadolares
 
 #--Punto1-- para hacer conversiones desde un lista de dolares--#
 loquescogio= int(input(Escojaunaopcion))
 while(loquescogio != 4):
     if(loquescogio == 1):
+        Mensajeopcion.format(1)
         opcionMoneda = input (ParaConvertir)
         if(opcionMoneda == 'C'):
             print(MensajePesoscop)
@@ -66,6 +79,13 @@ while(loquescogio != 4):
     elif (loquescogio==2):
         print(Mensajeopcion.format(2))
         print(ListaClasificacion)
+    elif(loquescogio==3):
+        print(Mensajeopcion.format(3))
+        print(Mensajeingresoalto, Mayorelemento)
+        print(Mensajeingresobajo, Menorelemento)
+        print(Mensajepromedioo, promedioelementos)
+    else:
+        print(Mensajeerrordenumero)
+        loquescogio= int(input(Escojaunaopcion))
 
-
-
+print('gracias por usar este programa')
