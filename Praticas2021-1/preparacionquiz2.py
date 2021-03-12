@@ -1,17 +1,18 @@
 #--replicando un taller hecho en clase 11/03/2021--#
 # ---- Preguntas
-preguntaNumero  =  '' 'Ingrese alguna de estas opciones
+preguntaNumero  =  '''
+Ingrese alguna de estas opciones
     1.Hacer conversión de pesos a dólares o euros
     2.Agrege un valor a la lista de pesos
     3.Mostrar valor más alto, más bajo y promedio
     4.Eliminar elemento de la lista
     5. Salir
-'' '
-preguntaMoneda  =  '' '
+'''
+preguntaMoneda  =  '''
     C- Mostrar original en pesos colombiano
     D- Mostrar en Dolares
     E- Mostrar en Euros
-'' '
+'''
 preguntarNumero  =  'Ingrese un valor en COP:'
 preguntaBorrarCoordenada  =  'Ingrese la posición que desea borrar:'
 # ---- Mensajes --- #
@@ -41,7 +42,7 @@ opcionEscogida=int(input(preguntaNumero))
 while(opcionEscogida =! 5):
     #--OPCION 1--Hacer conversión de pesos a dólares o euros-- #
     if (opcionEscogida==1):
-        escogemoneda= input (preguntaMoneda)
+        opcionMoneda= input ()
         if (escogemoneda== 'C'):
             print(mensajePesos)
             print(listapesos)
