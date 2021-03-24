@@ -41,7 +41,6 @@ def multiplicar (a=0 , b=0):
     multiplica= a * b
     return (multiplica)
 resultado= multiplicar()
-print(resultado)
 print(multiplicar(4728,5679))
 #--division--#
 def division (a=1 , b=1):
