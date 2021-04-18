@@ -34,6 +34,25 @@ class Humano ():
             print(f'hola soy {self.nombre} y tengo {self.dinero} pesos')
         return self.dinero
 
+
+class ingeniero (Humano):
+    def __init__(self,nombreEntrada,EdadEntrada,EstaturaEntrada):
+        self.area= areaEntrada
+    def solucionarProblemas(self,problema):
+        print(f'hola soy un ingeniero y me llamo {self.nombre}, y procedo a solucionar el problema {problema}')
+class Programador (Humano):
+    def crearAlgoritmo (self,problema):
+        print(f'Hola soy {self.nombre} y procedo a resolver el algoritmo {algoritmo}')
+
+class Biomedico(ingeniero,Programador):
+    def mantenimientoEquiposMedicos(self,nombreEquipo):
+        print(f'hola sou{self.nombre} y procedo a arreglar el {nombreEquipo}')
+
+class abogado (Humano):
+    def levantarAcciondeTutela(self,nombrecliente):
+        print(f'hola soy {self.nombre} y estoy representando a {nombrecliente} ')
+
+
 humano1 = Humano('Santiago', 18, 1.76)
 humano2= Humano('Maria', 16, 1.89)
 
@@ -54,6 +73,18 @@ humano2.RecorrerDistancia(25)
 
 totalahorrado= humano1.Ahorrardinero()
 print(totalahorrado)
+
+biomedico1= Biomedico ('karla',20,1.63,'Biomedicina')
+biomedico1.RecorrerDistancia(25)
+biomedico1.MostrarAtributos()
+biomedico1.mantenimientoEquiposMedicos('Electrocardiograma')
+
+abogado1= abogado('Stiven',34,1.94)
+abogado1.MostrarAtributos()
+abogado1.levantarAcciondeTutela(biomedico1.nombre)
+biomedico1.crearAlgoritmo('fibonacci')
+biomedico1.solucionarProblemas('ocupacion alta de camas uci')
+print(biomedico1.area)
 
 
 
