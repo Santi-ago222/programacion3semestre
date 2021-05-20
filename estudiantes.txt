@@ -1,0 +1,4 @@
+nombre :Santiagoedad :18estatura : 1.75nombre :& "C:/Users/Santiago bermudez/AppData/Local/Programs/Python/Python39/python.exe" "c:/Users/Santiago bermudez/Temas -programacion ces/programacion3semestre/Clases2021-1/manejarArchivos.py"edad :23estatura : 23.0
+nombre :Santiagoedad :23estatura : 1.74
+nombre :elsaedad  :22estatura : 1.66
+nombre :alejaedad  :18estatura : 1.76
