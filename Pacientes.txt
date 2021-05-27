@@ -1,0 +1,1 @@
+\ nombre : Camiloenfermedad : Nauseas precio 2000\ nombre : Camiloenfermedad : Nauseas precio 2000\ nombre : sebasenfermedad :  mareo precio 10000

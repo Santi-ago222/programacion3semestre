@@ -2,3 +2,4 @@ nombre :Santiagoedad :18estatura : 1.75nombre :& "C:/Users/Santiago bermudez/App
 nombre :Santiagoedad :23estatura : 1.74
 nombre :elsaedad  :22estatura : 1.66
 nombre :alejaedad  :18estatura : 1.76
+nombre :ssedad  :23estatura : 12.0
